@@ -40,7 +40,7 @@ export default function ReverseComplementPage() {
     // 计算互补序列
     const complement = inputSequence
       .split("")
-      .map((base) => complementMap[base] || base)
+      .map((base) => complementMap[base])
       .join("");
 
     // 反向
@@ -109,7 +109,8 @@ export default function ReverseComplementPage() {
             什么是反向互补序列？
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            反向互补序列（Reverse Complement）是分子生物学中的重要概念。DNA双链结构中，两条链通过碱基配对相互互补：
+            反向互补序列（Reverse
+            Complement）是分子生物学中的重要概念。DNA双链结构中，两条链通过碱基配对相互互补：
           </p>
           <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mb-4">
             <li>腺嘌呤（A）与胸腺嘧啶（T）配对</li>
@@ -244,4 +245,3 @@ export default function ReverseComplementPage() {
     </div>
   );
 }
-
